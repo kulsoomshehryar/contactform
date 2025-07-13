@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Themed Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <form id="userForm">
+      <h2>User Information</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWtdPNuIx_6dFTTSM35iiysjR6qd7P1Vwfw&s" alt="Profile" class="form-image"/>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" />
+
+      <label for="phoneno">Phone No:</label>
+      <input type="text" id="phoneno" name="phoneno"  />
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <!-- countries will be added by JS -->
+      </select>
+
+      <label for="city">City:</label>
+      <select id="city" name="city">
+       
+      </select>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="" disabled selected>Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="3" placeholder="Write your message here (2+ lines allowed)"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="events.js"></script>
+</body>
+</html>
